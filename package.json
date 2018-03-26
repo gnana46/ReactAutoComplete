@@ -4,14 +4,12 @@
   "description": "Quandoo Autocomplete Task",
   "main": "bundle.js",
   "dependencies": {
-    "autocompl": "^1.1.0",
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
     "react": "^16.2.0",
     "react-redux": "5.0.4",
     "redux": "3.6.0",
-    "redux-promise": "^0.5.3",
-    "suggestion": "^2.1.2"
+    "redux-promise": "^0.5.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
