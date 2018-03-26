@@ -1,0 +1,136 @@
+@import 'variables';
+
+/* Media Query Mixins */
+
+@mixin break($args...) {
+    @if length($args)==1 {
+        @media(max-width: nth($args, 1)) {
+            @content;
+        }
+    }
+    @if length($args)==2 {
+        @media(min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}
+
+@mixin landscape {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-desktop {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin placeholder {
+    input::-webkit-input-placeholder {
+        @content
+    }
+    input:-moz-placeholder {
+        @content
+    }
+    input::-moz-placeholder {
+        @content
+    }
+    input:-ms-input-placeholder {
+        @content
+    }
+}
+
+@mixin opacity($opacity) {
+    filter: alpha(opacity=$opacity*100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity*100});
+    opacity: $opacity;
+}
+
+/* Border Mixins */
+
+@mixin bdr-none{
+    border:0;
+}
+
+@mixin bdr-btm {
+    border-bottom: 1px solid $common-border-color;
+}
+
+
+/* border radius*/
+
+@mixin bdr-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* native appearance */
+
+@mixin native-appearance-none($value){
+    -webkit-appearance: $value;
+   -moz-appearance:    $value;
+   appearance:         $value;
+}
+
+/* box Shadow */
+
+@mixin box-shadow-none{
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+@mixin box-shadows($x, $y, $z, $offset, $color, $inset: false) {
+    //$ie-color: ie-hex-str($color);
+
+  @if $inset {
+	    -webkit-box-shadow: inset $x $y $z $offset $color;
+           -moz-box-shadow: inset $x $y $z $offset $color;
+			    box-shadow: inset $x $y $z $offset $color;
+	} @else {
+	    -webkit-box-shadow: $x $y $z $offset $color;
+           -moz-box-shadow: $x $y $z $offset $color;
+			    box-shadow: $x $y $z $offset $color;
+		//filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=#{$x}, OffY=#{$y}, Color='#{$ie-color}');
+	}
+}
+
+/* Transform */
+
+@mixin translateY($value){
+    -ms-transform: translateY($value);
+    -webkit-transform: translateY($value);
+    -moz-transform: translateY($value);
+    transform: translateY($value);
+}
+@mixin translateX($value){
+    -ms-transform: translateX($value);
+    -webkit-transform: translateX($value);
+    -moz-transform: translateX($value);
+    transform: translateX($value);
+}

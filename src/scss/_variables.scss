@@ -1,0 +1,48 @@
+$body-background: #f6f6f6;
+
+//Font-family
+
+$font-regular: Averta,Helvetica,Verdana,Geneva,sans-serif;
+$font-icon: "quandoo-icons",Helvetica,arial;
+
+//color's
+
+$general-text-color: #535353;
+$heading-color: #333;
+$black-color: #000;
+$white-color: #fff;
+$quandoo-yellow-color: #f8b333;
+$link-color: #000;
+$page-bg-color: #1c1c1c;
+//fonts size
+$base-font-size: 14px;
+$base-line-heigth: 20px;
+$input-font-size: 16px;
+//Button
+
+$button-text-size: 20px;
+$button-grey: #ccc;
+$button-blue: #1879b9;
+$button-blue-hover:#0d598b;
+$button-white: #fff;
+
+//Title
+
+$title-font-size: 36px;
+$title-line-height: 42px;
+
+
+//link
+
+$link-font-size: 13px;
+$link-font-family: $font-regular;
+
+//fonts
+
+$primary-font: 14px/20px $font-regular;
+$title-font: normal #{$title-font-size}/#{$title-line-height} $font-regular;
+$mobile-title-font: normal 20px/26px $font-regular;
+
+//file drop box
+$drop-box-border-color: #8794aa;
+$drop-file-text-color: #6b788b;

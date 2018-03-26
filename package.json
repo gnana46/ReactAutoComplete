@@ -1,0 +1,52 @@
+{
+  "name": "quandoo",
+  "version": "1.0.0",
+  "description": "Quandoo Autocomplete Task",
+  "main": "bundle.js",
+  "dependencies": {
+    "autocompl": "^1.1.0",
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.23.0",
+    "react": "^16.2.0",
+    "react-redux": "5.0.4",
+    "redux": "3.6.0",
+    "redux-promise": "^0.5.3",
+    "suggestion": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.4",
+    "mocha": "^2.4.5",
+    "node-sass": "^4.5.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "scripts": {
+    "dev": "npm start",
+    "start": "http-server -p 4848",
+    "watch": "webpack -d --watch",
+    "test": "mocha --require babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch",
+    "build": "webpack -p",
+    "prod": "npm run build"
+  },
+  "author": "Gnanaprakash",
+  "license": "ISC"
+}

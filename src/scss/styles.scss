@@ -1,0 +1,228 @@
+@import 'variables';
+@import 'helpers';
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+
+/* Common Use  */
+
+.pm0 {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:hover {
+  color: $link-color;
+  text-decoration: none;
+  border: 0;
+}
+.clr{
+  clear: both;
+}
+.page-wrapper{
+
+}
+body{
+  background: $page-bg-color;
+  font: $primary-font;
+}
+.gutter{
+  padding: 0 25px;
+}
+.full-width{
+  clear: both;
+  float: left;
+  width: 100%;
+}
+/*Header styles*/
+header{
+  background: $white-color;
+  padding: 15px 25px;
+  .logo{
+    color: $quandoo-yellow-color;
+    font: 32px $font-icon;
+  }
+}
+/* footer */
+footer{
+  background: $page-bg-color;
+  padding: 20px 25px;
+  .logo{
+    color: $quandoo-yellow-color;
+    font: 20px $font-icon;
+    float: left;
+  }
+  p{
+    color: $white-color;
+    float: left;
+    font-size: 12px;
+    margin: 0 0 0 25px;
+  }
+}
+/* Search Block */
+.search-wrapper{
+  background: url('../images/home_hero.jpg')  no-repeat center;
+  background-size: cover;
+  min-height: 500px;
+}
+.block-title{
+  font: $title-font;
+  color: $white-color;
+  padding: 30px 0;
+  width: 100%;
+}
+.search-block {
+  padding: 50px;
+  @extend .full-width;
+  input{
+    border: 2px solid $quandoo-yellow-color;
+    border-radius: 5px 0 0 5px;
+    color: $general-text-color;
+    float: left;
+    font-size: $input-font-size;
+    height: 60px;
+    outline: none;
+    padding: 10px 20px;
+    width: 80%;
+    &:focus{
+      border: 2px solid $quandoo-yellow-color;
+    }
+  }
+  .btn-find {
+    background: $quandoo-yellow-color;
+    border:none;
+    border-radius: 0 5px 5px 0;
+    color: $white-color;
+    cursor: pointer;
+    float: left;
+    font-size: $button-text-size;
+    height: 60px;
+    outline: none;
+    width: 10%;
+  }
+  @include break(#{$tablet-width - 1px}) {
+    padding: 50px 0;
+    input{
+      width: 70%;
+    }
+    .btn-find{
+      width: 30%;
+    }
+  }
+}
+.suggest-list{
+  background: $white-color;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  width: 90%;
+  @include box-shadows(2px, 10px, 16px, 6px, rgba(0, 0, 0, 0.24));
+  li{
+    padding: 7px 20px;
+    &:hover{
+      background: #eff0f1;
+    }
+  }
+  @include break(#{$tablet-width - 1px}) {
+    width: 100%;
+  }
+}
