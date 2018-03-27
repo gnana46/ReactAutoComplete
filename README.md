@@ -17,3 +17,5 @@ after that run the these command
 Have to create Bing API key if this one this Key limit is over. have to pass the api in the header.
 
 Bing allow one request per second for trail api. 
+
+# To see output direct open demo.html not required to run in server.
