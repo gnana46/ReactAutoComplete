@@ -16,6 +16,6 @@ after that run the these command
   
 Have to create Bing API key if this Key limit is over. have to pass the api in the header.
 
-Bing allow one request per second for trial api. 
+Bing allow one request per second for trial api. https://azure.microsoft.com/en-gb/services/cognitive-services/autosuggest/
 
 # To see output direct open demo.html not required to run in server.
