@@ -26,7 +26,7 @@ var config = {
     },
     /**
      * To Excluding react file or any other external files if not needed in production
-
+     * uncomment externals want remove to external libs if already present in the site
     externals: {
         'react': 'React',
         'react-dom': 'ReactDOM',

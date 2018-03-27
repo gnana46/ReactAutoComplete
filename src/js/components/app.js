@@ -1,3 +1,7 @@
+/**
+ * App Component  - wrapper of all Component
+ */
+
 import React, { Component } from 'react';
 import Header from './header';
 import Footer from './footer';

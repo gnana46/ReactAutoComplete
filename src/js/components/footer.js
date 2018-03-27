@@ -1,3 +1,7 @@
+/**
+ * Footer- Componenet used to render static footer content
+ */
+
 import React from 'react';
 
 const Footer = (props) => {

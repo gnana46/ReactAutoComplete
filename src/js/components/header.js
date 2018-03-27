@@ -1,3 +1,7 @@
+/**
+ * Header- Componenet used to render static Header content
+ */
+
 import React from 'react';
 
 const Header = (props) => {

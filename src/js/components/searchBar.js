@@ -1,3 +1,9 @@
+/**
+ * SearchBar Component contains inputbox and button
+ * props {@onSearchTermChange()} pass input to the props function
+ * function: handleInputChange - used to pass the input text to the props onSearchTermChange()
+ */
+
 import React, {Component} from 'react';
 
 class SearchBar extends Component {

@@ -1,3 +1,8 @@
+/**
+ * SuggestionsList - Component used to render the suggestions data.
+ * props{@suggestions} - suggestions props contain API response
+ */
+
 import React, { Component } from 'react';
 import _ from 'lodash';
 
