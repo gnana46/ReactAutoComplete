@@ -12,10 +12,10 @@ after that run the these command
       http://127.0.0.1:4848
   2. npm run watch - to watch the change in the file
   3. npm run build - to get the production build
-  4. npm run test:watch - to excute all the test and watch the changes
+  4. npm run test:watch - to excute all the tests and watch the changes
   
 Have to create Bing API key if this one this Key limit is over. have to pass the api in the header.
 
-Bing allow one request per second for trail api. 
+Bing allow one request per second for trial api. 
 
 # To see output direct open demo.html not required to run in server.
