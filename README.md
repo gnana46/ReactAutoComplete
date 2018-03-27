@@ -14,7 +14,7 @@ after that run the these command
   3. npm run build - to get the production build
   4. npm run test:watch - to excute all the tests and watch the changes
   
-Have to create Bing API key if this one this Key limit is over. have to pass the api in the header.
+Have to create Bing API key if this Key limit is over. have to pass the api in the header.
 
 Bing allow one request per second for trial api. 
 
